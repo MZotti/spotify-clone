@@ -26,6 +26,37 @@ const Artist = () => {
                     <Icon icon="menuDots" />
                 </div>
             </div>
+            <div className={styles.topCard} >
+                <div className={styles.popularTracks}>
+                    <span className={styles.boxTitle}>Populares</span>
+                </div>
+                <div className={styles.rightBox}>
+                    <div className={styles.likedTracks}>
+                        <span className={styles.boxTitle}>Músicas Curtidas</span>
+                        <div className={styles.artistBox}>
+                            <div className={styles.picture}>
+                                <img src="https://i.scdn.co/image/6dc0be659ea462b84b9b6485bc20db8dffaa48e2" alt="Iron Maiden"/>
+                            </div>
+                            <div className={styles.countDetails}>
+                                <span className={styles.likeCount}>Você curtiu 50 músicas</span>
+                                <span className={styles.artistName}>De Iron Maiden</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.artistChoice}>
+                        <span className={styles.boxTitle}>Escolhas do artista</span>
+                        <div className={styles.artistBox}>
+                            <div className={styles.picture}>
+                                <img src="https://i.scdn.co/image/6dc0be659ea462b84b9b6485bc20db8dffaa48e2" alt="Iron Maiden"/>
+                            </div>
+                            <div className={styles.countDetails}>
+                                <span className={styles.likeCount}>Você curtiu 50 músicas</span>
+                                <span className={styles.artistName}>De Iron Maiden</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         </>
     )

@@ -28,7 +28,7 @@
 }
 
 .container {
-    margin: 0 35px;
+    padding: 0 35px;
 }
 
 .topCommands {
@@ -70,4 +70,65 @@
 
 .topCommands .followButton:hover {
     border: 1px solid #FFF;
+}
+
+.topCommands .menuButton {
+    font-size: 15px;
+}
+
+.topCommands .menuButton:hover {
+    color: #FFF;
+}
+
+.topCard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topCard .popularTracks {
+    display: flex;
+    flex-direction: column;
+}
+
+.topCard .rightBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.topCard .rightBox .artistBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.topCard .rightBox .artistBox .picture {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.topCard .rightBox .artistBox .picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.topCard .rightBox .artistBox .countDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topCard .rightBox .artistBox .countDetails .likeCount{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.boxTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFF;
 }
