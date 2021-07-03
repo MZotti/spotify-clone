@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header .title {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.header .title:hover {
+    text-decoration: underline;
+}
+
+.header .anchor {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0s;
+}
+
+.header .anchor:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    margin: 10px
+}

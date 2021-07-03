@@ -1,0 +1,119 @@
+.mainNavWrapper {
+    position: absolute;
+    top: 0;
+    max-width: 1422px;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+}
+
+.commands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commands .pageControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70px;
+    margin-right: 30px;
+}
+
+.commands .pageControl .arrowBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: #282828;
+    color: #FFF;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.commands .items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commands .items ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commands .items ul li a{
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px 12px;
+}
+
+.commands .items ul li a.active{
+    background-color: #282828;
+    border-radius: 4px;
+}
+
+.profileBoxWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 130px;
+}
+
+.profileBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+    padding: 3px 10px 3px 3px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.profileBox:hover {
+    background-color: #282828;
+}
+
+.profileBox .profilePicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileBox .profilePicture img {
+    width: 28px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.profileBox span {
+    margin: 0 8px;
+}
+
+.profileBox .dropDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: #FFF;
+    padding-bottom: 3px;
+    cursor: pointer;
+}

@@ -5,9 +5,129 @@
     padding: 0;
     box-sizing: border-box;
     box-shadow: none;
+    border-style: none;
+    border-color: none;
     outline: 0;
 }
 
 body {
     background: $backgroundColor;
+    color: $fontColor;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    min-height: 100vh;
+    --main-green: #1DB954;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #585858;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b6b6b6;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #d8d8d8;
+}
+
+h1 { 
+    color: #FFF;
+    font-size: 1.65rem;
+    margin-bottom: 16px;
+}
+
+a,
+a:visited {
+    color: $fontColor;
+    text-decoration: none;
+    transition: color .2s linear;
+    cursor: pointer;
+}
+
+a:hover {
+    color: $linkHover;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    min-height: 224px;
+    margin-bottom: 16px;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    // margin-bottom: 90px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1422px;
+    background-color: #121212;
+    overflow-y: overlay;
+    margin-bottom: 90px;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 32px 10px 32px;
+}
+
+.cards-list .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cards-list .header .title {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.cards-list .header .title:hover {
+    text-decoration: underline;
+}
+
+.cards-list .header .anchor {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0s;
+}
+
+.cards-list .header .anchor:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.cards-list .cards-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards-list .cards .card {
+    margin: 10px
 }

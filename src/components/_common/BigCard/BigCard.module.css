@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: linear-gradient(149.46deg,#450af5,#8e8ee5 99.16%);
+    width: calc(30% + 22px);
+    min-height: 261.7px;
+    padding: 20px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.card span {
+    margin-right: 4px;
+}
+
+.songs {
+    font-size: 1rem;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.song {
+    opacity: .7;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #FFF;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.likes {
+    font-size: 1rem;
+}

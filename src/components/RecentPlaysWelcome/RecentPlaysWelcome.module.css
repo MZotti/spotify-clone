@@ -1,0 +1,11 @@
+.cardsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    margin: 10px
+}

@@ -1,33 +1,44 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+import Home from '../../views/Home/Home';
+import Collection from '../../views/Collection/Collection';
+import Artist from '../../views/Artist/Artist';
 
 const Routes = () => {
 
     const routesList = [
         {
-            name: "",
-            path: "",
-            component: "",
+            name: "collection",
+            path: "/biblioteca",
+            component: <Collection />,
+        },
+        {
+            name: "artist",
+            path: "/artista/:slug",
+            component: <Artist />,
         },
         {
             name: "",
             path: "",
-            component: "",
+            component: <Home />,
         },
     ]
+    
+    console.log(routesList);
 
     return (
-        <BrowserRouter>
-        {
-            routesList.map(route => {
-                return (
-                    <Switch>
-                        <Route path={route.path} ></Route>
-                    </Switch>
-                )
-            })
-        }
-        </BrowserRouter>
+        <>
+            <Switch>
+                {
+                    routesList.map(route => {
+                        return (
+                            <Route key={route.name} path={route.path}>{route.component}</Route>
+                        )
+                    })
+                }
+            </Switch>
+        </>
     )
 }
 

@@ -1,0 +1,188 @@
+.playerBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #181818;
+    height: 90px;
+    width: 100%;
+    padding: 0 16px;
+    z-index: 1;
+}
+
+.musicDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 180px;
+    width: 30%;
+}
+
+.musicDetails .disc {
+    width: 56px;
+    height: 56px;
+}
+
+.musicDetails .disc img {
+    width: 100%;
+}
+
+.musicDetails .track {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0 14px;
+}
+
+.musicDetails .track a {
+    cursor: pointer;
+    transition: all 0s linear;
+}
+
+.musicDetails .track a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.musicDetails .track .title {
+    color: #FFF;
+}
+
+.musicDetails .track .artits {
+    font-size: 10px;
+}
+
+.like {
+    margin: 0;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.like.active {
+    color: #1DB954;
+}
+
+.like div {
+    width: 16px;
+    height: 16px;
+    background-color: #181818;
+}
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    width: 40%;
+}
+
+.commands .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 722px;
+    width: 40%;
+    margin-bottom: 12px;
+}
+
+.commands .buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.6rem;
+    background: inherit;
+    cursor: pointer;
+}
+
+.commands .buttons .sm div{
+    font-weight: 300;
+    font-size: 1em;
+    color: #B3B3B3;
+}
+
+.commands .buttons .sm:hover div{
+    color: #FFF;
+}
+
+.commands .buttons .bg div {
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.commands .buttons .bg:hover div {
+    transform: scale(1.05);
+}
+
+.commands .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.commands .progress .timeStamp{
+    min-width: 40px;
+    text-align: center;
+}
+
+.commands .progress .progressBarWrapper {
+    display: flex;
+    align-items: center;
+    height: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.commands .progress .progressBarWrapper .progressBar {
+    height: 25%;
+    width: 100%;
+    background-color: #535353;
+    border-radius: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 180px;
+    width: 30%;
+}
+
+.options .button{
+    font-weight: 300;
+    font-size: 1rem;
+    background: inherit;
+    color: #B3B3B3;
+    margin: 0 0.6rem;
+    cursor: pointer;
+}
+
+.options .button:hover{
+    color: #FFF;
+}
+
+.options .volume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .volume .volumeBarWrapper {
+    display: flex;
+    align-items: center;
+    height: 12px;
+    position: relative;
+    width: 100%;
+    min-width: 90px;
+}
+
+.options .volume .volumeBarWrapper .volumeBar {
+    height: 25%;
+    width: 100%;
+    background-color: #535353;
+    border-radius: 10px;
+}

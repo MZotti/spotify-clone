@@ -1,0 +1,73 @@
+.banner {
+    position: relative;
+    height: 350px;
+    margin-bottom: 0px;
+    background-image: url("https://news.toyark.com/wp-content/uploads/sites/4/2019/09/Banner-Incendium-Iron-Maiden.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    color: #FFF;
+}
+
+.details .verified,
+.details .monthlyUsers {
+    font-size: 14px;
+}
+
+.details .title {
+    font-size: 5rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.container {
+    margin: 0 35px;
+}
+
+.topCommands {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.topCommands .playButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: var(--main-green);
+    color: #FFF;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.topCommands .playButton:hover {
+    transform: scale(1.05);
+}
+
+.topCommands .followButton {
+    padding: 8px 13px;
+    border: 1px solid #ffffff42;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.topCommands .followButton:hover {
+    border: 1px solid #FFF;
+}
